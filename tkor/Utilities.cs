@@ -65,7 +65,7 @@ namespace tkor
             }
             var result = new HashSet<int>();
 
-            var roktCouponsAsArray = roktCoupons.Distinct().ToArray();
+            var roktCouponsAsArray = roktCoupons.ToArray();
 
             for (var i=0; i < roktCouponsAsArray.Length; i++) {
                 for (var j=i+1; j < roktCouponsAsArray.Length; j++) {
